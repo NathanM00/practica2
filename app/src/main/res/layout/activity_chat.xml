@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chat">
+
+
+    <EditText
+        android:id="@+id/edt_caja"
+        android:layout_width="326dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <ImageButton
+        android:id="@+id/btn_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/edt_caja"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <ListView
+        android:id="@+id/list_mensajes"
+        android:layout_width="match_parent"
+        android:layout_height="398dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:id="@+id/tv_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Mensajes"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        />
+
+</RelativeLayout>
